@@ -1,0 +1,14 @@
+Weather Report
+<!doctype html>
+<html>
+   <body>
+   
+      <h1> Weather for {{ name }}:</h1>
+	  <p>
+      <img src = "{{iconUrl}}">
+	  {{ temp }} degrees Fahrenheit 
+	  </p>
+	  <img src="{{ url_for('fig', cityName = name) }}">
+	  
+   </body>
+</html>
